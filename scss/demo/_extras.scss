@@ -1,0 +1,246 @@
+/* ----------------------------------------------------------------
+	Extra Styles
+-----------------------------------------------------------------*/
+
+.shipping-banner {
+	position: absolute;
+	left: 4.375rem;
+	top: 5.625rem;	
+}
+
+.link-icon {
+	background-image: url(../images/icons/link.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	display: inline-block;
+	width: 2.5625rem;
+	height: 2.5625rem;
+
+	&.black {
+		background-image: url(../images/icons/link_black.png);
+	}
+}
+
+#about-banner {
+	@include media-breakpoint-down(lg) {
+		margin-bottom: 1rem;
+		width: 100%;
+	}
+}
+
+#about-main {
+	background-color: #fff9fe;
+
+	h4 {
+		line-height: 3rem;
+		letter-spacing: 0.05rem;
+	}
+
+	@include media-breakpoint-down(lg) {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+}
+
+#about-bottom {
+	position: relative;
+
+	.about-more {
+		position: absolute;
+		left: 3rem;
+		bottom: -11rem;
+
+		@include media-breakpoint-down(lg) {
+			position: relative;
+			left: 0;
+			bottom: 0;
+
+			img {
+				width: 100%;
+				margin-top: 1rem;
+			}
+		}
+	}
+
+	@include media-breakpoint-down(lg) {
+		padding-left: 3rem;
+		padding-right: 3rem;
+	}
+}
+
+.piece {
+	@include media-breakpoint-down(lg) {
+		display: none;
+	}
+}
+
+.carousel-indicator {
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items:center;
+
+	.dots {
+		&:nth-child(1) {
+			i {
+				font-size: 0.7rem;
+			}
+		}
+
+		&:nth-child(2) {
+			i {
+				font-size: 0.5rem;
+			}
+		}
+
+		&:nth-child(3) {
+			i {
+				font-size: 0.3rem;
+			}
+		}
+	}
+
+	.arrows {
+		position: absolute;
+		left: 35%;
+    	bottom: 6rem;
+
+		a {
+			color: $secondary;
+
+			i {
+				font-size: 3rem;
+			}
+
+			&:hover {
+				color: $theme-color;
+			}
+		}
+
+		@include media-breakpoint-down(lg) {
+			left: 44%;
+			bottom: 1rem;
+		}
+
+		@include media-breakpoint-down(sm) {
+			left: 40%;
+		}
+	}
+}
+
+.sale-banner {
+	padding: 1rem;
+
+	img {
+		width: 4rem;
+		height: 3.5rem;
+	}
+	
+	h4 {
+		font-size: 1.125rem;
+	}
+
+	p {
+		color: #4f4f4f;
+		line-height: 1.2rem;
+		font-weight: 0.875rem;
+	}
+
+	@include media-breakpoint-down(lg) {
+		padding: 1rem;
+	}
+}
+
+// slider items//
+.slick-prev::before, .slick-next:before {
+	 font-size: 3rem;
+	 opacity: 1;
+	 color:#dcdcdc;
+
+	 @include media-breakpoint-down(lg) {
+		display: none;
+	}
+ }
+
+ .slick-prev {
+	 left:-10rem;
+
+	 @include media-breakpoint-down(lg) {
+		display: none !important;
+	}
+ }
+
+ .slick-next {
+    right: -7rem;
+
+	@include media-breakpoint-down(lg) {
+		display: none !important;
+	}
+}
+
+.slick-slide {
+	margin: 1rem;
+ }
+ .slick-list {
+	 padding: 0 !important;
+ }
+
+//  time side//
+.end-time {
+	.title {
+		font-size: 1.325rem;
+		font-family: $body-font;
+	}
+
+	.time {
+		p {
+			font-size: 0.6rem;
+			margin-top: 0.5rem;
+		}
+
+		span {
+			font-family: $body-font;
+			font-size: 1.65rem;
+			padding: 0.8rem 0.5rem;
+			background-color: $white;
+			border-radius: 0.7rem 0.5rem;
+		}
+	}
+}
+
+.shop-now-link {
+	background-color: $theme-color;
+    font-family: $body-font;
+    font-weight: 500;
+	font-size: .875rem;
+    color: #fff;
+    letter-spacing: .1rem;
+    padding: 1.5rem 4rem;
+    border-radius: 2rem;
+	text-decoration: none;
+
+	&:hover {
+		background-color: rbga($theme-color, 0.5);
+	}
+}
+
+//decorations//
+.decoration {
+	position: absolute;
+
+	&.banner {
+		top: 0;
+		right: 0rem;
+	}
+
+	&.main {
+		left: 0;
+		bottom: -3rem;
+	}
+
+	@include media-breakpoint-down(lg) {
+		display: none;
+	}
+}
