@@ -7,16 +7,13 @@
 		position: relative;
 		max-width: 16.625rem;
 		height: 5.5rem;
-		display: flex;
+		display: flex !important;
+		justify-content: center;
+		margin: auto;
 
 		img {
 			width: auto;
 			height: auto;
-		}
-
-		@include media-breakpoint-down(sm) {
-			margin-left: 0.5rem;
-			margin-right: 0.5rem;
 		}
 
 		&.border-right{
@@ -29,6 +26,10 @@
 				width: 1px;
 				height: 3rem;
 				background-color: #3c323e;
+
+				@include media-breakpoint-down(lg) {
+					width: 0;
+				}
 			}
 		}
 	}

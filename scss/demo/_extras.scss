@@ -21,6 +21,18 @@
 	}
 }
 
+.play-btn {
+	position: absolute;
+    right: -2.45rem;
+    bottom: 5.5rem;
+
+	a {
+		padding: 2.25rem;
+		background-color: $theme-color;
+		border-radius: 50%;
+	}
+}
+
 #about-banner {
 	@include media-breakpoint-down(lg) {
 		margin-bottom: 1rem;
@@ -46,14 +58,17 @@
 	position: relative;
 
 	.about-more {
-		position: absolute;
-		left: 3rem;
-		bottom: -11rem;
+		position: relative;
 
-		@include media-breakpoint-down(lg) {
-			position: relative;
+		@media screen and (min-width : 1800px) {
+			top: -9rem;
+			margin-bottom: -14rem;
+		}
+
+		@include media-breakpoint-down(xxl) {
 			left: 0;
-			bottom: 0;
+			top: 0;
+			margin: 0;
 
 			img {
 				width: 100%;
@@ -165,7 +180,7 @@
  }
 
  .slick-prev {
-	 left:-10rem;
+	 left:-4rem;
 
 	 @include media-breakpoint-down(lg) {
 		display: none !important;
@@ -173,7 +188,7 @@
  }
 
  .slick-next {
-    right: -7rem;
+    right: -3rem;
 
 	@include media-breakpoint-down(lg) {
 		display: none !important;

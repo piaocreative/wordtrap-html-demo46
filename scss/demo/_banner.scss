@@ -28,6 +28,10 @@
         @include media-breakpoint-down(lg) {
             height: 45rem;
         }
+
+        @include media-breakpoint-up(lg) {
+            height: 50rem;
+        }
     }
 
     .banner-wrap {
