@@ -143,6 +143,10 @@
 			left: 40%;
 		}
 	}
+
+	@include media-breakpoint-down(lg) {
+		display: none;
+	}
 }
 
 .sale-banner {
