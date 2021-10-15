@@ -20,7 +20,7 @@
 -----------------------------------------------------------------*/
 .category {
 	position: relative;	
-	margin-bottom: 1rem;
+	margin-bottom: 1.875rem;
 
 	.category-image {
 		img {
@@ -29,12 +29,11 @@
 	}
 
 	.category-content {
-		font-size: 0.8rem;
-		line-height: 1.5rem;
+		line-height: 1.5;
 	}
 
 	.category-title {
-		font-size: 1rem;
+		font-size: 1.125rem;
 		font-family: $body-font;
 		font-weight: 700;
 		text-transform: uppercase;
@@ -45,7 +44,7 @@
 /* Product
 -----------------------------------------------------------------*/
 .product {
-	margin-bottom: 1rem;
+	margin-bottom: 1.875rem;
 	position: relative;
 
 	.product-image {
@@ -75,13 +74,13 @@
 		font-weight: 700;
 		line-height: 1;
 		color: $secondary;
+		font-size: 1.125rem;
 
 		del {
 			position: relative;
 			margin-left: 0.5rem;
 			color: $secondary;
 			font-weight: 700;
-			text-decoration: none;
 
 			&:before {
 				position: absolute;
@@ -110,7 +109,7 @@
 	}
 
 	.product-info {
-		font-size: 1rem;
+		font-size: 1.125rem;
 		line-height: 1.5;
 	}
 
@@ -269,18 +268,9 @@
 			}
 
 			p {
+				font-size: 1.125rem;
 				line-height: 1.5rem;
 				color: $secondary;
-			}
-
-			a {
-				font-size: 1rem;
-				padding: 1.5rem 3rem;
-				color: #fff;
-				text-decoration: none;
-				font-family: $body-font;
-				font-weight: 500;
-				letter-spacing: 0.05rem;
 			}
 
 			@include media-breakpoint-down(lg) {

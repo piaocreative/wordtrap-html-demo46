@@ -19,15 +19,9 @@
 .widget {
 	position: relative;
 
-	p {
-		line-height: 1.3rem!important;
-		color: #3a3a3a;
-		font-size: 0.875rem;
-	}
-
 	.widget-title {
 		color: #362e29;		
-		font-size: 1rem;
+		font-size: 1.125rem;
 		margin-bottom: 1.5rem;
 		font-family: $body-font;
 		font-weight: 600;
@@ -87,8 +81,7 @@
 
 				a {
 					color:#746771;
-					text-decoration: none;
-					font-size: 0.875rem;
+					font-size: 1.125rem;
 
 					&:hover {
 						color: #362e29;
@@ -148,11 +141,8 @@
 	&.widget-custom-html {
 		.widget-content {
 			a {	
-				font-family: $body-font;
-				font-size: 0.875rem;
 				font-weight: 600;
 				display: block;
-				text-decoration: none;
 				color: #362e29;
 				letter-spacing: 0.05rem;
 				margin-bottom: 0.3rem;
@@ -167,23 +157,13 @@
 	&.widget-subscribe {
 		.widget-content {
 			p {
-				font-size:0.875rem;
 				color: #362e29;
-				letter-spacing: 0.05rem;
 			}
 
 			#widget-subscribe-form {
 				input {
 					font-size: 0.875rem;
 					border-bottom: 1px solid #978888;
-				}
-
-				button {
-					border-radius: 2rem;
-					padding: 1.2rem 5rem;
-					letter-spacing: 0.1rem;
-					font-size: 1rem;
-					color: $white;
 				}
 			}
 		}

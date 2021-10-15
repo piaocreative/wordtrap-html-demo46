@@ -212,37 +212,22 @@
 //  time side//
 .end-time {
 	.title {
-		font-size: 1.325rem;
+		font-size: 1.5rem;
 		font-family: $body-font;
 	}
 
 	.time {
 		p {
-			font-size: 0.6rem;
+			font-size: 0.75rem;
 			margin-top: 0.5rem;
 		}
 
 		span {
-			font-size: 1.65rem;
+			font-size: 1.8755rem;
 			padding: 0.8rem 0.5rem;
 			background-color: $white;
 			border-radius: 0.7rem 0.5rem;
 		}
-	}
-}
-
-.shop-now-link {
-	background-color: $theme-color;
-    font-weight: 500;
-	font-size: .875rem;
-    color: #fff;
-    letter-spacing: .1rem;
-    padding: 1.5rem 4rem;
-    border-radius: 2rem;
-	text-decoration: none;
-
-	&:hover {
-		background-color: rbga($theme-color, 0.5);
 	}
 }
 
