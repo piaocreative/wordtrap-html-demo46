@@ -4,7 +4,13 @@
 
 -----------------------------------------------------------------*/
 .error-404 {
+    background-image: url(../images/404/4041.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     position: relative;
+    padding-top: 10.625rem;
+    padding-bottom: 8rem;
 
     .error-logo {
         font-family: $heading-font;
@@ -16,28 +22,10 @@
     }
 
     .error-content {
-        position: absolute;
-        top: 0;
-        right: 0;
-        left: 0;
-        height: 100%;
-
-        p {
-            font-size: 0.875rem;
-            letter-spacing: 0.05rem;
-        }
-
         .go-home {
             padding: 1.3rem 4rem;
             font-size: 0.875rem;
-            font-weight: 500;
             letter-spacing: 0.07rem;
-        }
-    }
-
-    @include media-breakpoint-down(lg) {
-        .error-banner {
-            height: 35rem;
         }
     }
 }
