@@ -14,11 +14,15 @@
 
     .error-logo {
         font-family: $heading-font;
-        font-size: 15rem;
-        font-weight: 500;
+        font-size: 18.75rem;
+        font-weight: 400;
         color: #3c323e;
         line-height: 1;
         letter-spacing: 0.5rem;
+
+        @include media-breakpoint-down(lg) {
+            font-size: 15rem;
+        }
     }
 
     .error-content {
